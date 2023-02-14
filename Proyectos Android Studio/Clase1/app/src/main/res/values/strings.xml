@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">ejemplo1</string>
-    <string name="titulo">calculadora</string>
-    <string name="numberOne">n1</string>
-    <string name="multiplicator">mul</string>
-    <string name="calcularMultiplicacion">calcular</string>
-</resources>
