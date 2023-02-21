@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Clase3</string>
+    <string name="LadoUno">Lado Uno</string>
+    <string name="LadoDos">Lado Dos</string>
+    <string name="Calcular">Calcular</string>
+    <string name="Resultado">El resultado es:</string>
 </resources>
