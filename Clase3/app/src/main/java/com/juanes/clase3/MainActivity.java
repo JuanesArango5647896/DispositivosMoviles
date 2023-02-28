@@ -2,6 +2,7 @@ package com.juanes.clase3;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,10 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float ladoUno = Float.parseFloat(LadoUno.getText().toString());
-                float ladoDos = Float.parseFloat(LadoDos.getText().toString());
-                float Resultad = ladoUno*ladoDos;
-                Resultado.setText(String.valueOf(Resultad));
+                gotoActivity2(view);
             }
         });
     }
@@ -69,5 +67,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i(TAG, "Entre a OnDestroy");
+    }
+
+    //Creo una funcion, con nombre gotoActivity2, es publica y no espera nada de respuesta
+    //view es el tipo de dato(en este caso, un objeto que es la vista, por eso view)
+    //view es el nombre de ese objeto que recibe la funcion
+    public void gotoActivity2(View view){
+        float ladoUno = Float.parseFloat(LadoUno.getText().toString());
+        float ladoDos = Float.parseFloat(LadoDos.getText().toString());
+        float Resultad = ladoUno*ladoDos;
+        Resultado.setText(String.valueOf(Resultad));
+        Intent pasarResultado = new Intent(this,MainActivity2.class);
+        pasarResultado.putExtra("Resultado",String.valueOf(Resultad));
+        pasarResultado.putExtra("LadoUno",LadoUno.getText().toString());
+        pasarResultado.putExtra("LadoDos",LadoDos.getText().toString());
+        startActivity(pasarResultado);
     }
 }
