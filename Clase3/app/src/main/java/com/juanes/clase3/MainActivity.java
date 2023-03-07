@@ -3,6 +3,7 @@ package com.juanes.clase3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     String TAG = "Depuracion";
     EditText LadoUno, LadoDos;
     TextView Resultado;
-    Button Calcular;
+    Button Calcular, AbrirGoogle, Llamada;
+    String phoneNumber = "3022909793";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,20 @@ public class MainActivity extends AppCompatActivity {
         LadoDos = findViewById(R.id.LadoDos);
         Resultado = findViewById(R.id.Resultado);
         Calcular = findViewById(R.id.Calcular);
+        AbrirGoogle = findViewById(R.id.openGoogle);
+        Llamada = findViewById(R.id.llamar);
+        Llamada.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                llamada(view);
+            }
+        });
+        AbrirGoogle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                irActivity2(view);
+            }
+        });
     }
 
     @Override
@@ -82,5 +98,19 @@ public class MainActivity extends AppCompatActivity {
         pasarResultado.putExtra("LadoUno",LadoUno.getText().toString());
         pasarResultado.putExtra("LadoDos",LadoDos.getText().toString());
         startActivity(pasarResultado);
+    }
+
+    public void irActivity2(View view){
+        Intent irAGoogle = new Intent(Intent.ACTION_VIEW);
+        irAGoogle.setData(Uri.parse("https://www.google.com"));
+        startActivity(irAGoogle);
+    }
+
+    public void llamada(View view){
+        Intent llamar = new Intent(Intent.ACTION_DIAL);
+        llamar.setData(Uri.parse("tel:" + phoneNumber));
+        if(llamar.resolveActivity(getPackageManager())!=null){
+            startActivity(llamar);
+        }
     }
 }

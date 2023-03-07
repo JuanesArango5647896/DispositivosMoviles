@@ -106,4 +106,34 @@
         </EditText>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/openGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abrirGoogle">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/llamar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/llamada">
+
+        </Button>
+
+    </LinearLayout>
 </LinearLayout>

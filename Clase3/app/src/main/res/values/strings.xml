@@ -7,4 +7,6 @@
     <string name="LadoDos.">El lado dos es:</string>
     <string name="Calcular">Calcular</string>
     <string name="Resultado">El resultado es:</string>
+    <string name="abrirGoogle">AbrirGoogle</string>
+    <string name="llamada">Llamar</string>
 </resources>
