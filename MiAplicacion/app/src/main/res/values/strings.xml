@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MiAplicacion</string>
+    <string name="app_name2">MiAplicacion</string>
+    <string name="datoUno">Dato Uno: </string>
+    <string name="datoUno1">El dato Uno es: </string>
+    <string name="datoDos">Dato Dos: </string>
+    <string name="datoDos2">El dato Dos es: </string>
+    <string name="datoTres">Dato Tres: </string>
+    <string name="datoTres3">El dato Tres es: </string>
+    <string name="Boton">Boton </string>
+    <string name="abrirGoogle">Google </string>
+    <string name="llamada">Llamar </string>
+</resources>
