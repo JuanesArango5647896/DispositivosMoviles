@@ -10,4 +10,7 @@
     <string name="Boton">Boton </string>
     <string name="abrirGoogle">Google </string>
     <string name="llamada">Llamar </string>
+    <string name="wifi">Wifi </string>
+    <string name="camara">Camara </string>
+    <string name="contactos">Contactos </string>
 </resources>

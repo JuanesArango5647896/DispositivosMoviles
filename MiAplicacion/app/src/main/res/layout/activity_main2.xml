@@ -119,4 +119,49 @@
         </Button>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/Wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/Camara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camara">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/Contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contactos">
+
+        </Button>
+
+    </LinearLayout>
 </LinearLayout>
