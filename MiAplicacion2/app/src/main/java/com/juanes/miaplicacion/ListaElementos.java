@@ -1,13 +1,14 @@
 package com.juanes.miaplicacion;
 
 public class ListaElementos {
-    public  String color, name, ciudad, estado;
+    public  String color, name, ciudad, estado, hora;
 
-    public ListaElementos(String color, String name, String ciudad, String estado) {
+    public ListaElementos(String color, String name, String ciudad, String estado, String hora) {
         this.color = color;
         this.name = name;
         this.ciudad = ciudad;
         this.estado = estado;
+        this.hora = hora;
     }
 
     public String getColor() {
@@ -40,5 +41,9 @@ public class ListaElementos {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public String getHora() {
+        return hora;
     }
 }

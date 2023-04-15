@@ -48,7 +48,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         ImageView iconImage;
-        TextView name, city, status;
+        TextView name, city, status, hour;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -56,6 +56,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
             name = itemView.findViewById(R.id.nameTextView);
             city = itemView.findViewById(R.id.cityTextView);
             status = itemView.findViewById(R.id.statusTextView);
+            hour = itemView.findViewById(R.id.hourTextView);
         }
 
         void bindData(final ListaElementos item){
@@ -63,6 +64,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
             name.setText(item.getName());
             city.setText(item.getCiudad());
             status.setText(item.getEstado());
+            hour.setText(item.getHora());
         }
     }
 
