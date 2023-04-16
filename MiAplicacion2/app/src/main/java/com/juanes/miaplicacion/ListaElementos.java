@@ -1,6 +1,8 @@
 package com.juanes.miaplicacion;
 
-public class ListaElementos {
+import java.io.Serializable;
+
+public class ListaElementos implements Serializable {
     public  String color, name, ciudad, estado, hora;
 
     public ListaElementos(String color, String name, String ciudad, String estado, String hora) {
@@ -46,4 +48,6 @@ public class ListaElementos {
     public String getHora() {
         return hora;
     }
+
+    public void setHora(String hora) { this.hora = hora; }
 }
