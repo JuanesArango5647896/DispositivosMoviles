@@ -20,6 +20,24 @@
         android:textSize="34sp"
         android:textStyle="italic" />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icono"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="167dp"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="19dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="@drawable/outline_contact_mail_24"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
