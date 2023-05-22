@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
-        android:background="#E91E63"
+        android:background="#016A60"
         android:text="@string/gmail"
         android:textAlignment="center"
         android:textColor="#FBFAFA"
@@ -27,7 +27,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="167dp"
+        android:layout_marginStart="1dp"
         android:layout_marginLeft="167dp"
         android:layout_marginTop="19dp"
         android:paddingLeft="14dp"
@@ -106,4 +106,4 @@
 
     </TextView>
 
-</RelativeLayout>
+</TableLayout>

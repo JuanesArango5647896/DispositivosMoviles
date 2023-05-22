@@ -15,9 +15,10 @@
         android:animateLayoutChanges="true"
         android:orientation="vertical">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#009688"
             android:orientation="horizontal"
             android:padding="6dp">
 
@@ -26,27 +27,27 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:paddingLeft="14dp"
                 android:paddingRight="14dp"
                 android:src="@drawable/outline_contact_mail_24"
-                app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"
-                android:layout_alignParentLeft="true">
+                app:civ_border_width="2dp">
 
             </de.hdodenhof.circleimageview.CircleImageView>
 
             <LinearLayout
                 android:id="@+id/linearLayout"
-                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
                 android:layout_marginTop="2dp"
                 android:layout_toEndOf="@+id/iconoImageView"
-                android:layout_marginLeft="4dp"
-                android:layout_toRightOf="@+id/iconoImageView">
+                android:layout_toRightOf="@+id/iconoImageView"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/nameTextView"
@@ -54,6 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:text="@string/app_name"
+                    android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="24sp"
                     android:textStyle="bold">
@@ -65,12 +67,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/ciudad"
+                    android:textAlignment="center"
                     android:textSize="18sp">
 
                 </TextView>
 
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/hourTextView"
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginRight="13dp"
+                    android:text="@string/hora"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold">
 
+                </TextView>
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/statusTextView"
@@ -80,28 +97,15 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="7dp"
-                android:layout_marginRight="13dp"
+                android:layout_marginRight="7dp"
                 android:text="@string/activo"
+                android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold">
 
             </TextView>
 
-            <TextView
-                android:id="@+id/hourTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="77dp"
-                android:layout_marginRight="77dp"
-                android:text="@string/hora"
-                android:textSize="14sp"
-                android:textStyle="bold">
-
-            </TextView>
-
-        </RelativeLayout>
+        </LinearLayout>
 
     </LinearLayout>
 

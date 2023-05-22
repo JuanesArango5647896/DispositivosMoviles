@@ -24,16 +24,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void  init(){
         elementos = new ArrayList<>();
-        elementos.add(new ListaElementos("#7B1FA2","BZRP","Buenos Aires","Activo", "10:45 AM"));
-        elementos.add(new ListaElementos("#22c219","Arcangel","Punta Cana","Inactivo", "11:50 PM"));
-        elementos.add(new ListaElementos("#0fd6c9","Leo Messi","Paris","Activo", "2:10 PM"));
-        elementos.add(new ListaElementos("#0f12d6","Ice Cube","New York","Inactivo", "5:45 AM"));
-        elementos.add(new ListaElementos("#d6730f","Blessd","Los Angeles","Activo", "4:40 PM"));
-        elementos.add(new ListaElementos("#e30910","Ryan","Amsterdam","Inactivo", "7:25 PM"));
-        elementos.add(new ListaElementos("#d6190f","Cristiano","Singapour","Activo", "8:33 AM"));
-        elementos.add(new ListaElementos("#05f28f","Neymar","Rio de Janeiro","Inactivo", "3:35 AM"));
-        elementos.add(new ListaElementos("#056e33","Carl Cox","Miami","Activo", "6:30 PM"));
-        elementos.add(new ListaElementos("#873542","Anuel","Lisboa","Inactivo", "1:17 PM"));
+        elementos.add(new ListaElementos("#FF000000","BZRP","Session # 50","300 M", "4:05 min"));
+        elementos.add(new ListaElementos("#FF000000","Arcangel","Me prefieres a mi","290 M", "2:30 min"));
+        elementos.add(new ListaElementos("#FF000000","Zion y Lennox","Hay algo en ti","250 M", "3:10 min"));
+        elementos.add(new ListaElementos("#FF000000","Ice Cube","You know how we do it","230 M", "3:30 min"));
+        elementos.add(new ListaElementos("#FF000000","Blessd","Palabras Sobran","200 M", "3:50 min"));
+        elementos.add(new ListaElementos("#FF000000","Ryan Castro","Malory","170 M", "3:45 min"));
+        elementos.add(new ListaElementos("#FF000000","De La Ghetto","Dices","160 M", "2:50 min"));
+        elementos.add(new ListaElementos("#FF000000","Eladio Carrion","Friends","140 M", "3:00 min"));
+        elementos.add(new ListaElementos("#FF000000","Carl Cox","Set in France for cercle","100 M", "4:20 min"));
+        elementos.add(new ListaElementos("#FF000000","Anuel","Adicto","80 M", "4:18 min"));
 
 
         ListAdapter listAdapter = new ListAdapter(elementos, this, new ListAdapter.OnItemClickListener() {
